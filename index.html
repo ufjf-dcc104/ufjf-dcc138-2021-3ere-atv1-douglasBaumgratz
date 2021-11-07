@@ -32,8 +32,8 @@
         t0 = t0 ?? t;
         dt = (t - t0) / 1000;
 
-        x = x + 0 * dt;
         a = a + 2 * Math.PI * dt;
+        x = x + 15 * Math.cos(a);
         y = 100 + 100 * Math.cos(a);
 
         ctx.fillStyle = "white";
