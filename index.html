@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DCC138</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>DCC138 - Atividade 01</h1>
     <canvas></canvas>
     <p>por Douglas Baumgratz de Carvalho</p>
 
     <script>
-        let canvas = document.querySelector("canvas");
-        let ctx = canvas.getContext("2d");
+      let canvas = document.querySelector("canvas");
+      let ctx = canvas.getContext("2d");
+      let x = 250;
 
-        canvas.width = 480;
-        canvas.height = 320;
+      canvas.width = 480;
+      canvas.height = 320;
 
+      desenha();
+
+      function desenha() {
         ctx.fillStyle = "black";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "white";
+        ctx.fillRect(x, 150, 20, 20);
+      }
     </script>
-    
-</body>
+  </body>
 </html>
